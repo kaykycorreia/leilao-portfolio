@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+<meta charset="UTF-8">
+<title>Portal de Leilões</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+Portal de Leilões
+</div>
+
+<nav>
+
+<a href="index.html">Home</a>
+<a href="veiculos.html">Veículos</a>
+<a href="imoveis.html">Imóveis</a>
+<a href="login.html">Login</a>
+<a href="cadastro.html">Cadastrar</a>
+
+</nav>
+
+</header>
+
+<section class="banner">
+
+<h1>Leilões de veículos e imóveis</h1>
+<p>Até 60% abaixo da tabela</p>
+
+</section>
+
+
+<section class="busca">
+
+<input
+type="text"
+id="buscar"
+placeholder="Buscar veículos ou imóveis..."
+onkeyup="buscarItens()"
+>
+
+</section>
+
+
+<section class="filtro">
+
+<select id="filtroPreco" onchange="filtrarPreco()">
+
+<option value="todos">Todos os preços</option>
+
+<option value="50000">Até R$ 50.000</option>
+<option value="100000">Até R$ 100.000</option>
+<option value="300000">Até R$ 300.000</option>
+<option value="500000">Até R$ 500.000</option>
+
+</select>
+
+</section>
+
+
+
+<section class="categorias">
+
+<h2>Destaques</h2>
+
+<div class="categoria-grid">
+
+
+<div class="categoria-card">
+
+<img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70">
+
+<h3>Honda Civic 2020</h3>
+
+<p>São Paulo</p>
+
+<strong class="preco">48000</strong>
+
+<div class="contador" data-tempo="86400"></div>
+
+</div>
+
+
+
+<div class="categoria-card">
+
+<img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994">
+
+<h3>Casa 3 quartos</h3>
+
+<p>Campinas</p>
+
+<strong class="preco">280000</strong>
+
+<div class="contador" data-tempo="86400"></div>
+
+</div>
+
+
+
+<div class="categoria-card">
+
+<img src="https://images.unsplash.com/photo-1511919884226-fd3cad34687c">
+
+<h3>Audi A3</h3>
+
+<p>São Paulo</p>
+
+<strong class="preco">72000</strong>
+
+<div class="contador" data-tempo="86400"></div>
+
+</div>
+
+
+
+<div class="categoria-card">
+
+<img src="https://images.unsplash.com/photo-1570129477492-45c003edd2be">
+
+<h3>Apartamento Centro</h3>
+
+<p>Santos</p>
+
+<strong class="preco">210000</strong>
+
+<div class="contador" data-tempo="86400"></div>
+
+</div>
+
+
+
+</div>
+
+</section>
+
+
+<footer>
+
+© 2026 Portal de Leilões
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
